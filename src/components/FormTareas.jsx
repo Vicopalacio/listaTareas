@@ -28,7 +28,7 @@ const FormTareas = () => {
           </Button>
         </Form.Group>
       </Form>
-      <ListaTareas></ListaTareas>
+      <ListaTareas arregloTareas = {arregloTareas}></ListaTareas>
     </>
   );
 };
