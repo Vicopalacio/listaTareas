@@ -13,6 +13,13 @@ const FormTareas = () => {
     //limpiar el imput
     setTarea("");
   };
+
+  const borrarTarea = (nombre)=>{
+    let arregloModificado = arregloTareas.filter((item)=> item !== nombre);
+    //tenemos que actualizar el state
+    setArregloTareas(arregloModificado);
+  }
+
   return (
     <>
       <Form className="my-3" onSubmit={handleSubmit}>
@@ -28,7 +35,7 @@ const FormTareas = () => {
           </Button>
         </Form.Group>
       </Form>
-      <ListaTareas arregloTareas = {arregloTareas}></ListaTareas>
+      <ListaTareas arregloTareas = {arregloTareas} borrarTarea = {borrarTarea}></ListaTareas>
     </>
   );
 };
