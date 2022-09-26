@@ -2,7 +2,7 @@
 Lista de tareas con react boostrap y agregando a localStorage>
 
 ## Demo del proyecto
-[Demo]()
+[Demo](https://stirring-malabi-fa8a96.netlify.app/)
 
 ## Pasos para probar el proyecto
 una vez clonando el repositorio ejecutar
